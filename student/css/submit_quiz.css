@@ -1,0 +1,348 @@
+/* Result Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Result Container */
+.result-container {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Section */
+.result-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 30px;
+    text-align: center;
+    color: white;
+}
+
+.result-header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease;
+}
+
+.result-header p {
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+/* Content Section */
+.result-content {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* Score Card */
+.score-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.score-number {
+    font-size: 4em;
+    font-weight: bold;
+    color: #667eea;
+    margin: 20px 0;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.score-number span {
+    font-size: 1.5em;
+    color: #764ba2;
+}
+
+.score-label {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Performance Message */
+.performance-message {
+    background: #f0f4ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #667eea;
+    text-align: left;
+}
+
+.performance-message h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.performance-message p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Result Icon */
+.result-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    background: #e0e0e0;
+    border-radius: 25px;
+    height: 30px;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    height: 100%;
+    border-radius: 25px;
+    transition: width 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Certificate Badge */
+.certificate-badge {
+    background: #fff3cd;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #ffc107;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    }
+}
+
+.certificate-badge a {
+    color: #856404;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certificate-badge a:hover {
+    text-decoration: underline;
+}
+
+/* Share Buttons */
+.share-section {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.share-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+}
+
+.twitter {
+    background: #1DA1F2;
+    color: white;
+}
+
+.facebook {
+    background: #4267B2;
+    color: white;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .result-container {
+        margin: 20px;
+    }
+    
+    .result-header {
+        padding: 30px 20px;
+    }
+    
+    .result-content {
+        padding: 30px 20px;
+    }
+    
+    .score-number {
+        font-size: 3em;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .share-buttons {
+        justify-content: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Confetti Effect (Optional) */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    position: absolute;
+    animation: confetti-fall 3s linear;
+}
+
+@keyframes confetti-fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
